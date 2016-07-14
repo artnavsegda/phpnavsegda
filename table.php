@@ -4,9 +4,9 @@ require_once dirname(__FILE__) . '/Phpmodbus/ModbusMaster.php';
 
 // Create Modbus object
 //$ip = "192.168.111.130";
-$ip = "127.0.0.1";
+//$ip = "127.0.0.1";
 //$ip = "192.168.1.120";
-//$ip = "192.168.1.114";
+$ip = "192.168.1.114";
 $modbus = new ModbusMaster($ip, "TCP");
 
 try {
@@ -25,7 +25,7 @@ catch (Exception $e) {
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=windows-1250">
-        <meta name="generator" content="PSPad editor, www.pspad.com">
+        <meta http-equiv="refresh" content="5">
         <title>WAGO 750-841 M-memory dump</title>
     </head>
     <body>
@@ -33,9 +33,6 @@ catch (Exception $e) {
         <ul>
             <li>PLC: 750-84x series</li>
             <li>IP: <?php echo $ip?></li>
-            <li>Modbus module ID: <?php echo $moduleId?></li>
-            <li>Modbus memory reference: <?php echo $reference?></li>
-            <li>Modbus memory quantity: <?php echo $quantity?></li>
         </ul>
 
         <h2>M-memory dump</h2>
@@ -61,7 +58,7 @@ catch (Exception $e) {
 
 try {
     // FC 3
-    $recData = $modbus->readMultipleRegisters(0, 8, 26);
+    $recData = $modbus->readMultipleRegisters(0, 8, 40);
 }
 catch (Exception $e) {
     echo $modbus;
