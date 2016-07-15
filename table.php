@@ -24,7 +24,7 @@ catch (Exception $e) {
 
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+        <meta charset="utf-8">
         <meta http-equiv="refresh" content="5">
         <title>WAGO 750-841 M-memory dump</title>
     </head>
