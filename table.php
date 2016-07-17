@@ -3,7 +3,7 @@
 require_once dirname(__FILE__) . '/Phpmodbus/ModbusMaster.php';
 
 // Create Modbus object
-//$ip = "192.168.111.130";
+///$ip = "192.168.111.132";
 //$ip = "127.0.0.1";
 //$ip = "192.168.1.120";
 $ip = "192.168.1.114";
@@ -25,19 +25,16 @@ catch (Exception $e) {
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
         <meta http-equiv="refresh" content="5">
-        <title>WAGO 750-841 M-memory dump</title>
+        <title>Modbus Table</title>
     </head>
     <body>
-        <h1>Dump of M-memory from WAGO 750-84x series coupler.</h1>
-        <ul>
-            <li>PLC: 750-84x series</li>
-            <li>IP: <?php echo $ip?></li>
-        </ul>
+        <h1>Modbus Table</h1>
+            <h2><?php echo $ip?></h2>
 
-        <h2>M-memory dump</h2>
 
-<table border="1px" width="400px">
+<table border="1px" width="400px" align="center">
     <tr>
         <td>Modbus address</td>
         <td>value</td>
@@ -72,7 +69,7 @@ $values = array_chunk($recData, 2);
 
 ?>
 
-        <table border="1px" width="400px">
+        <table border="1px" width="400px" align="center">
             <tr>
                 <td>Modbus address</td>
                 <td>value</td>
@@ -99,7 +96,7 @@ $values = array_chunk($recData, 2);
             exit;
         }?>
 
-        <table border="1px" width="400px">
+        <table border="1px" width="400px" align="center">
             <tr>
                 <td>Modbus address</td>
                 <td>value</td>
