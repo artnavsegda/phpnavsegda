@@ -37,8 +37,8 @@ catch (Exception $e) {
 <table border="1px" width="400px" align="center">
     <caption>Modbus Table</caption>
     <tr>
-        <td>Modbus address</td>
-        <td>value</td>
+        <th>Modbus address</th>
+        <th>value</th>
     </tr>
     <?php
     $i = 0;
