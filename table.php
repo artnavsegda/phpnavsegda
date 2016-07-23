@@ -72,8 +72,8 @@ $values = array_chunk($recData, 2);
 
         <table border="1px" width="400px" align="center">
             <tr>
-                <td>Modbus address</td>
-                <td>value</td>
+                <th>Modbus address</th>
+                <th>value</th>
             </tr>
             <?php
             foreach($floatvalues as $bytes) {
@@ -99,8 +99,8 @@ $values = array_chunk($recData, 2);
 
         <table border="1px" width="400px" align="center">
             <tr>
-                <td>Modbus address</td>
-                <td>value</td>
+                <th>Modbus address</th>
+                <th>value</th>
             </tr>
             <?php
             $i = 98;
