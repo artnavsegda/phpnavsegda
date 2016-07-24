@@ -16,6 +16,15 @@ p {
   color: blue;
 }
 
-table {
-    
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: .5em;
+}
+
+caption {
+    caption-side: top;
 }
