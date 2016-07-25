@@ -36,10 +36,10 @@ catch (Exception $e) {
 
 <table border="1px" width="400px" align="center">
     <caption>Modbus Table</caption>
-    <tr>
+    <thead><tr>
         <th>Modbus address</th>
         <th>value</th>
-    </tr>
+    </tr></thead><tbody>
     <?php
     $i = 0;
     foreach($coilData as $bytes) {
@@ -51,7 +51,7 @@ catch (Exception $e) {
         <?php
     }
     ?>
-</table>
+    </tbody></table>
 <?php
 
 try {

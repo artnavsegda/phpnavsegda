@@ -19,12 +19,25 @@ p {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    background: #ece3aa;
 }
 
 td {
     padding: .5em;
 }
 
+td:first-child {
+    text-align: center;
+}
+
+th {
+    
+}
+
 caption {
     caption-side: top;
+}
+
+tr:nth-child(odd) {
+    background: #f3ecdd;
 }
