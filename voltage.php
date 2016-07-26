@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="refresh" content="5">
+    <meta http-equiv="refresh" content="1">
     <link rel="stylesheet" href="main.css">
     <title>Untitled Document</title>
 </head>
@@ -12,7 +12,7 @@
 
 <math display="block">
   <mrow>
-    <mi>x</mi>
+    <mi><?php echo PhpType::bytes2float($floatvalues[17])?></mi>
     <mi mathvariant='normal' class='MathML-Unit'>V</mi>
     <mo>=</mo>
     <mo>(</mo>

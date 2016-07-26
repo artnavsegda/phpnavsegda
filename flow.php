@@ -16,8 +16,24 @@
     <mo>(</mo>
       <mfrac>
         <mrow>
-          <mi href="voltage.html">y</mi>
-          <mi mathvariant='normal' class='MathML-Unit'>V</mi>
+          <mo>(</mo>
+          <mo>(</mo>
+          <mn><?php echo PhpType::bytes2float($floatvalues[15])?></mn>
+          <mo>-</mo>
+          <mn>180</mn>
+          <mo>)</mo>
+          <mo>&CenterDot;</mo>
+          <mfrac>
+            <mrow>
+              <mn>3.3</mn>
+              <mo>/</mo>
+              <mn>1.6</mn>
+            </mrow>
+            <mrow>
+              <mn>4095</mn>
+            </mrow>
+          </mfrac>
+          <mo>)</mo>
           <mo>/</mo>
           <mn>0.319</mn>
         </mrow>

@@ -10,16 +10,19 @@
 
 <math display="block">
   <mrow>
+    <mn><?php echo PhpType::bytes2float($floatvalues[1])?></mn>
+    <mi mathvariant='normal' class='MathML-Unit'>ug/m3</mi>
+    <mo>=</mo>
     <mfrac>
       <mrow>
-        <mn>7000</mn>
+        <mn><?php echo PhpType::bytes2float($floatvalues[18])?></mn>
         <mo>-</mo>
-        <mn>6092</mn>
+        <mn><?php echo PhpType::bytes2float($floatvalues[19])?></mn>
       </mrow>
       <mrow>
-        <mn>15000</mn>
+        <mn><?php echo PhpType::bytes2float($floatvalues[20])?></mn>
         <mo>-</mo>
-        <mn>6092</mn>
+        <mn><?php echo PhpType::bytes2float($floatvalues[19])?></mn>
       </mrow>
     </mfrac>
     <mo>&CenterDot;</mo>
@@ -38,7 +41,7 @@
         <mo>(</mo>
           <mo>(</mo>
             <mo>(</mo>
-              <mi>y</mi>
+              <mn><?php echo PhpType::bytes2float($floatvalues[21])?></mn>
               <mo>-</mo>
               <mn>180</mn>
             <mo>)</mo>
@@ -57,7 +60,7 @@
           <mo>-</mo>
           <mn>0.5</mn>
         <mo>)</mo>
-        <mo>&#x2062;</mo>
+        <mo>&CenterDot;</mo>
         <mn>100</mn>
       <mo>)</mo>
       <mo>-</mo>
