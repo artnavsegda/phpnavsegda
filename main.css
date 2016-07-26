@@ -1,8 +1,9 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: whitesmoke;
 }
 
-h1, h2, p, ul, li, table {
+h1 {
     text-align: center;
 }
 
@@ -16,26 +17,9 @@ p {
   color: blue;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    background: #ece3aa;
-}
-
-td {
-    padding: .5em;
-}
-
-td:first-child {
-    text-align: center;
-}
-
-th {
-    
-}
-
-caption {
-    caption-side: top;
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
 
 tr:nth-child(odd) {

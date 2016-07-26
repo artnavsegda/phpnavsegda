@@ -11,8 +11,8 @@ require_once dirname(__FILE__) . '/Phpmodbus/ModbusMaster.php';
 // Create Modbus object
 ///$ip = "192.168.111.132";
 //$ip = "127.0.0.1";
-$ip = "192.168.1.120";
-//$ip = "192.168.1.114";
+//$ip = "192.168.1.120";
+$ip = "192.168.1.114";
 $modbus = new ModbusMaster($ip, "TCP");
 
 try {
