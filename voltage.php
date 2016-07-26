@@ -16,7 +16,7 @@
     <mi mathvariant='normal' class='MathML-Unit'>V</mi>
     <mo>=</mo>
     <mo>(</mo>
-    <mi><?php echo PhpType::bytes2float($floatvalues[16])?></mi>
+    <mn><?php echo PhpType::bytes2float($floatvalues[16])?></mn>
     <mo>-</mo>
     <mn>180</mn>
     <mo>)</mo>
