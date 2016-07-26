@@ -3,14 +3,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="refresh" content="5">
+    <meta http-equiv="refresh" content="1">
     <link rel="stylesheet" href="main.css">
     <title>Untitled Document</title>
 </head>
 
+<p>ADC0</p>
 <math display="block">
     <mrow>
         <mi><?php echo PhpType::bytes2float($floatvalues[17])?></mi>
+        <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
         <mi mathvariant='normal' class='MathML-Unit'>V</mi>
         <mo>=</mo>
         <mo>(</mo>
@@ -32,9 +34,11 @@
     </mrow>
 </math>
 
+<p>ADC3</p>
 <math display="block">
     <mrow>
         <mn><?php echo PhpType::bytes2float($floatvalues[7])?></mn>
+        <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
         <mi mathvariant='normal' class='MathML-Unit'>&#x2103;</mi>
         <mo>=</mo>
         <mo>(</mo>
@@ -64,10 +68,12 @@
     </mrow>
 </math>
 
+<p>ADC2</p>
 <math display="block">
     <mrow>
         <mn><?php echo PhpType::bytes2float($floatvalues[3])?></mn>
-        <mi mathvariant='normal' class='MathML-Unit'>Lpm</mi>
+        <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
+        <mi mathvariant='normal' class='MathML-Unit'>L</mi> <mo>/</mo> <mi mathvariant='normal' class='MathML-Unit'>min</mi>
         <mo>=</mo>
         <mo>(</mo>
         <mfrac>
@@ -115,8 +121,20 @@
 
 <math display="block">
     <mrow>
+      <msub>
+          <mi>C</mi>
+          <mn>25</mn>
+      </msub>
+      <mo>=</mo>
+      <mn>1.527</mn>
+    </mrow>
+</math>
+
+<math display="block">
+    <mrow>
         <mn><?php echo PhpType::bytes2float($floatvalues[1])?></mn>
-        <mi mathvariant='normal' class='MathML-Unit'>ug/m3</mi>
+        <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
+        <mi mathvariant='normal' class='MathML-Unit'>μg</mi> <mo>/</mo> <msup><mi mathvariant='normal' class='MathML-Unit'>m</mi> <mn>3</mn></msup>
         <mo>=</mo>
         <mfrac>
             <mrow>

@@ -56,7 +56,7 @@ catch (Exception $e) {
 
 try {
     // FC 3
-    $recData = $modbus->readMultipleRegisters(0, 8, 40);
+    $recData = $modbus->readMultipleRegisters(0, 8, 50);
 }
 catch (Exception $e) {
     echo $modbus;
