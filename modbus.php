@@ -171,7 +171,7 @@ OK – all thermocontrollers keep temperature in their preset ranges</td>
       <th scope="row">13</th>
       <td>Temperature of spectrometer</td>
       <td>22</td>
-      <td>33</td>
+      <td>23</td>
       <td>*C</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
