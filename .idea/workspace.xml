@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cb43b2-e724-4c06-a206-34fb1c896139" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/equations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/current.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cell.php" afterPath="$PROJECT_DIR$/cell.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flow.php" afterPath="$PROJECT_DIR$/flow.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modbus1.php" afterPath="$PROJECT_DIR$/modbus1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table.php" afterPath="$PROJECT_DIR$/table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temperature.php" afterPath="$PROJECT_DIR$/temperature.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voltage.php" afterPath="$PROJECT_DIR$/voltage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/equations.php" afterPath="$PROJECT_DIR$/equations.php" />
     </list>
     <ignored path="phpnavsegda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,25 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="equations.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/equations.php">
+      <file leaf-file-name="voltage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voltage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="174" column="7" selection-start-line="174" selection-start-column="7" selection-end-line="174" selection-end-column="7" />
-              <folding>
-                <element signature="e#2807#2818#0#HTML" expanded="true" />
-                <element signature="e#4483#4494#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="59" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="current.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/current.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+              <folding>
+                <element signature="e#788#796#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,14 +63,15 @@
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/modbus.php" />
         <option value="$PROJECT_DIR$/calibration.php" />
-        <option value="$PROJECT_DIR$/table.php" />
         <option value="$PROJECT_DIR$/voltage.php" />
         <option value="$PROJECT_DIR$/modbus1.php" />
         <option value="$PROJECT_DIR$/cell.php" />
         <option value="$PROJECT_DIR$/flow.php" />
         <option value="$PROJECT_DIR$/temperature.php" />
-        <option value="$PROJECT_DIR$/equations.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/table.php" />
+        <option value="$PROJECT_DIR$/equations.php" />
+        <option value="$PROJECT_DIR$/current.php" />
       </list>
     </option>
   </component>
@@ -92,9 +86,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5.37" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="541" />
-    <option name="y" value="95" />
-    <option name="width" value="1510" />
+    <option name="x" value="707" />
+    <option name="y" value="86" />
+    <option name="width" value="1711" />
     <option name="height" value="1184" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -122,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -143,7 +138,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,7 +223,10 @@
       <workItem from="1469499076411" duration="314000" />
       <workItem from="1469499894673" duration="224000" />
       <workItem from="1469500379779" duration="246000" />
-      <workItem from="1469527081198" duration="3627000" />
+      <workItem from="1469527081198" duration="4918000" />
+      <workItem from="1469544327398" duration="45000" />
+      <workItem from="1469564511488" duration="239000" />
+      <workItem from="1469633076868" duration="395000" />
     </task>
     <task id="LOCAL-00001" summary="roadblox">
       <created>1469174110720</created>
@@ -273,19 +270,25 @@
       <option name="project" value="LOCAL" />
       <updated>1469500007407</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="equations">
+      <created>1469531798176</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1469531798176</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16396000" />
+    <option name="totallyTimeSpent" value="18366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="541" y="95" width="1510" height="1184" extended-state="0" />
+    <frame x="707" y="86" width="1711" height="1184" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1832425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1605752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.50272477" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4918256" order="7" side_tool="false" content_ui="tabs" />
@@ -295,6 +298,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4972752" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -357,18 +361,50 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="roadblox" />
     <MESSAGE value="kitchen kink" />
-    <option name="LAST_COMMIT_MESSAGE" value="kitchen kink" />
+    <MESSAGE value="equations" />
+    <option name="LAST_COMMIT_MESSAGE" value="equations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="147" selection-start-line="122" selection-start-column="147" selection-end-line="122" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modbus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2055">
           <caret line="137" column="60" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -376,7 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -384,7 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -392,9 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="e#1219#1230#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -402,7 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -410,9 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <element signature="e#1723#1734#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -420,7 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2655">
           <caret line="177" column="59" selection-start-line="177" selection-start-column="10" selection-end-line="177" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -428,7 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -436,7 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -444,7 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4890">
           <caret line="326" column="61" selection-start-line="326" selection-start-column="10" selection-end-line="326" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,7 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4890">
           <caret line="326" column="21" selection-start-line="326" selection-start-column="21" selection-end-line="326" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,15 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,15 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voltage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="37" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="42" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="57" selection-end-column="7" />
-          <folding>
-            <element signature="e#1219#1230#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,28 +692,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <element signature="e#1723#1734#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/equations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="174" column="7" selection-start-line="174" selection-start-column="7" selection-end-line="174" selection-end-column="7" />
-          <folding>
-            <element signature="e#2807#2818#0#HTML" expanded="true" />
-            <element signature="e#4483#4494#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="134" column="87" selection-start-line="134" selection-start-column="87" selection-end-line="134" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voltage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/current.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding>
+            <element signature="e#788#796#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

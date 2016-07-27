@@ -11,7 +11,7 @@
 <p>ADC0</p>
 <math display="block">
     <mrow>
-        <mi><?php echo PhpType::bytes2float($floatvalues[17])?></mi>
+        <mi><?php echo number_format(PhpType::bytes2float($floatvalues[17]), 4, '.', '')?></mi>
         <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
         <mi mathvariant='normal' class='MathML-Unit'>V</mi>
         <mo>=</mo>
@@ -37,7 +37,7 @@
 <p>ADC3</p>
 <math display="block">
     <mrow>
-        <mn><?php echo PhpType::bytes2float($floatvalues[7])?></mn>
+        <mn><?php echo number_format(PhpType::bytes2float($floatvalues[7]), 4, '.', '')?></mn>
         <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
         <mi mathvariant='normal' class='MathML-Unit'>&#x2103;</mi>
         <mo>=</mo>
@@ -71,7 +71,7 @@
 <p>ADC2</p>
 <math display="block">
     <mrow>
-        <mn><?php echo PhpType::bytes2float($floatvalues[3])?></mn>
+        <mn><?php echo number_format(PhpType::bytes2float($floatvalues[3]), 4, '.', '')?></mn>
         <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
         <mi mathvariant='normal' class='MathML-Unit'>L</mi> <mo>/</mo> <mi mathvariant='normal' class='MathML-Unit'>min</mi>
         <mo>=</mo>
@@ -132,7 +132,7 @@
 
 <math display="block">
     <mrow>
-        <mn><?php echo PhpType::bytes2float($floatvalues[1])?></mn>
+        <mn><?php echo number_format(PhpType::bytes2float($floatvalues[1]), 4, '.', '')?></mn>
         <mo rspace='thickmathspace'>&InvisibleTimes;</mo>
         <mi mathvariant='normal' class='MathML-Unit'>μg</mi> <mo>/</mo> <msup><mi mathvariant='normal' class='MathML-Unit'>m</mi> <mn>3</mn></msup>
         <mo>=</mo>
