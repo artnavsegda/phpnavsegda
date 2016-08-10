@@ -23,7 +23,7 @@
         <mo>&#x2062;</mo>
         <mfrac>
             <mrow>
-                <mn>3.3</mn>
+                <mn href="edit.php">3.3</mn>
                 <mo>/</mo>
                 <mn>1.6</mn>
             </mrow>
@@ -51,7 +51,7 @@
         <mo>&CenterDot;</mo>
         <mfrac>
             <mrow>
-                <mn>3.3</mn>
+                <mn  href="edit.php">3.3</mn>
                 <mo>/</mo>
                 <mn>1.6</mn>
             </mrow>
