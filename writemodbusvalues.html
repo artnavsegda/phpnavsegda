@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Html form</title>
+</head>
+<body>
+<p>
+<form action="writemodbusvalues.php" method="get">
+    Host/IP addr:
+    <input type="text" name="host" value="127.0.0.1">
+    <br>
+    Type:
+    <select name="registertype">
+        <option value="coil" selected>Coil</option>
+        <option value="holdingregister">Holding Register</option>
+    </select>
+    <br>
+    Register:
+    <input type="number" name="registeraddr" min="0" max="100" value="3">
+    <br>
+    Value:
+    <input type="number" name="valuetowrite" min="0" max="100" value="3">
+    <br>
+    <input type="submit" value="Write register">
+</form>
+</p>
+</body>
+</html>
