@@ -43,6 +43,8 @@ echo "</br>Status:</br>" . $modbus;
 // Print read data
 echo "</br>Data:</br>";
 var_dump($recData);
+echo "</br>Value:</br>";
+var_dump(PhpType::bytes2signedInt($recData));
 echo "</br>";
 
 ?>
