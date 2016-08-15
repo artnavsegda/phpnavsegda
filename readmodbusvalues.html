@@ -6,16 +6,16 @@
 </head>
 <body>
 <p>
-<form action="readmodbusengine.php" method="get">
+<form action="editmodbusvalues.php" method="get">
     Host/IP addr:
     <input type="text" name="host" value="127.0.0.1">
     <br>
     Type:
     <select name="registertype">
-        <option value="coil" selected>Coil</option>
+        <option value="coil">Coil</option>
         <option value="discrete">Discrete Input</option>
         <option value="inputregister">Input Register</option>
-        <option value="holdingregister">Holding Register</option>
+        <option value="holdingregister" selected>Holding Register</option>
     </select>
     <br>
     Register:
