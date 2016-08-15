@@ -5,22 +5,27 @@
     <title>Html form</title>
 </head>
 <body>
-    <p>
-        <form action="hello.php" method="get">
-    Port:<br>
-            <input type="text" name="port" value="0"><br>
-                <select name="state2">
-                    <option value="low">Low</option>
-                    <option value="high" selected>High</option>
-                </select><br>
-            <input type="radio" name="state" value="low" checked>Low<br>
-            <input type="radio" name="state" value="high">High<br>
+<p>
+<form action="hello.php" method="get">
+    Host/IP addr:
+    <input type="text" name="port" value="127.0.0.1">
     <br>
-            <input type="checkbox" name="bit0" value="high">0
-            <input type="checkbox" name="bit1" value="high">1
-    <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </p>
+    Register:
+    <input type="number" name="register" min="1" max="5">
+    <br>
+    Type:
+    <select name="state2">
+        <option value="coil">Coil</option>
+        <option value="discrete">Discrete Input</option>
+        <option value="inputregister">Input Register</option>
+        <option value="holdingregister" selected>Holding Register</option>
+    </select>
+    <br>
+    Value:
+    <input type="number" name="value" min="1" max="5">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</p>
 </body>
 </html>
