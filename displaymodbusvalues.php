@@ -13,7 +13,7 @@
         }
     </script>
 </head>
-<body>
+<body onload="setInterval(function(){myFunction()}, 500);">
 <p id="bambuk"></p>
 </body>
 </html>
