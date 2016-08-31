@@ -29,9 +29,17 @@ catch (Exception $e)
 <p>
 <form action="settingsengine.php" method="get">
     Host/IP addr:
-    <input type="text" name="ipaddress" value="<?php echo $ipadress?>">
+    <input type="text" name="ip1" value="<?php echo $ipadress[0]?>">
+    <input type="text" name="ip2" value="<?php echo $ipadress[1]?>">
+    <input type="text" name="ip3" value="<?php echo $ipadress[2]?>">
+    <input type="text" name="ip4" value="<?php echo $ipadress[3]?>">
     Mac addr:
-    <input type="text" name="macadress" value="<?php echo $macadress?>">
+    <input type="text" name="mac1" value="<?php echo $macadress[0]?>">
+    <input type="text" name="mac2" value="<?php echo $macadress[1]?>">
+    <input type="text" name="mac3" value="<?php echo $macadress[2]?>">
+    <input type="text" name="mac4" value="<?php echo $macadress[3]?>">
+    <input type="text" name="mac5" value="<?php echo $macadress[4]?>">
+    <input type="text" name="mac6" value="<?php echo $macadress[5]?>">
     <br>
     <input type="submit" value="Edit settings">
 </form>

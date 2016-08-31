@@ -11,8 +11,21 @@ $modbus = new ModbusMaster($_REQUEST["host"], "TCP");
 
 try
 {
-    $modbus->writeSingleRegister(0, 100, array($_REQUEST["ipaddress"]), array("INT"));
-    $modbus->writeSingleRegister(0, 102, array($_REQUEST["macadress"]), array("INT"));
+    $ipadress[0] = $_REQUEST["ip1"];
+    $ipadress[1] = $_REQUEST["ip2"];
+    $modbus->writeSingleRegister(0, 100, $ipadress, array("INT"));
+    $ipadress[0] = $_REQUEST["ip2"];
+    $ipadress[1] = $_REQUEST["ip3"];
+    $modbus->writeSingleRegister(0, 101, $ipadress, array("INT"));
+    $macadress[0] = $_REQUEST["mac1"];
+    $macadress[1] = $_REQUEST["mac2"];
+    $modbus->writeSingleRegister(0, 102, $macadress, array("INT"));
+    $macadress[0] = $_REQUEST["mac3"];
+    $macadress[1] = $_REQUEST["mac4"];
+    $modbus->writeSingleRegister(0, 103, $macadress, array("INT"));
+    $macadress[0] = $_REQUEST["mac5"];
+    $macadress[1] = $_REQUEST["mac6"];
+    $modbus->writeSingleRegister(0, 104, $macadress, array("INT"));
 }
 catch (Exception $e)
 {
