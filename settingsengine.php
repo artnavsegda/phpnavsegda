@@ -11,9 +11,7 @@ $modbus = new ModbusMaster($_REQUEST["host"], "TCP");
 
 try
 {
-    $ipadress[0] = $_REQUEST["ip1"];
-    $ipadress[1] = $_REQUEST["ip2"];
-    $modbus->writeSingleRegister(0, 100, $ipadress, array("INT"));
+    $modbus->writeSingleRegister(0, 100, array($_REQUEST["ip1"],$_REQUEST["ip2"]), array("INT"));
     $ipadress[0] = $_REQUEST["ip2"];
     $ipadress[1] = $_REQUEST["ip3"];
     $modbus->writeSingleRegister(0, 101, $ipadress, array("INT"));
