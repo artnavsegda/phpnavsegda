@@ -19,6 +19,9 @@ try
         case "holdingregister":
             $modbus->writeSingleRegister(0, $_REQUEST["registeraddr"], array($_REQUEST["valuetowrite"]), array("INT"));
             break;
+        case "holdingregisterpair":
+            $modbus->writeSingleRegister(0, $_REQUEST["registeraddr"], array($_REQUEST["valuetowrite"]), array("REAL"));
+            break;
         default:
             break;
     }
