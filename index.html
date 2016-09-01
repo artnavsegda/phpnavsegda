@@ -5,14 +5,22 @@
 		<title>Php framework</title>
 	</head>
 	<body>
+    <p>
+    <form action="interface.php" method="get">
+        Host/IP addr:
+        <input type="text" name="host" value="127.0.0.1">
+        <br>
+        <input type="submit" value="Read register">
+    </form>
+    </p>
 	<p>
-		<a href="table.php">Modbus table</a>
+		<a href="table.php?host=127.0.0.1">Modbus table</a>
 	</p>
 	<p>
-		<a href="modbus2.php">Reference table</a>
+		<a href="modbus2.php?host=127.0.0.1">Reference table</a>
 	</p>
 	<p>
-		<a href="equations.php">Equations</a>
+		<a href="equations.php?host=127.0.0.1">Equations</a>
 	</p>
 	</body>
 </html>
