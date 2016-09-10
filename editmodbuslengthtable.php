@@ -6,17 +6,19 @@ $modbus = new ModbusMaster($_REQUEST["host"], "TCP");
 
 try
 {
-    switch ($_REQUEST["registertype"])
-    {
-        case "coil":
-            $recData = $modbus->readCoils(0, $_REQUEST["registeraddr"], 1);
-            break;
-        case "holdingregister":
-            $recData = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-            break;
-        default:
-            break;
-    }
+    $startlevel = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $celldelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $celllevel = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $zerodelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $zerotest = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $totalmercurydelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $totalmercury = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $elementalmercurydelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $elementalmercury = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $precalibrationdelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $calibration = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $postcalibrationdelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $purge = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
 }
 catch (Exception $e)
 {
@@ -65,45 +67,47 @@ catch (Exception $e)
     <title>Untitled Document</title>
 </head>
 
-<body><form><table width="200" border="1">
+<body><form action="writemodbuslengthtable.php" method="get"><table width="200" border="1">
         <tbody>
         <tr>
             <td>&nbsp;</td>
-            <td>start&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>start level&nbsp;<input name="startlevel" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($startlevel)?>">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>pre-calibration delay&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
-            <td>calibration&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
-            <td>post-calibration delay&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>pre-calibration delay&nbsp;<input name="precalibrationdelay" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($precalibrationdelay)?>">&nbsp;</td>
+            <td>calibration&nbsp;<input name="calibration" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($calibration)?>">&nbsp;</td>
+            <td>post-calibration delay&nbsp;<input name="postcalibrationdelay" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($postcalibrationdelay)?>">&nbsp;</td>
         </tr>
         <tr>
-            <td>cell delay&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
-            <td>cell level&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>cell delay&nbsp;<input name="celldelay" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($celldelay)?>">&nbsp;</td>
+            <td>cell level&nbsp;<input name="celllevel" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($celllevel)?>">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>zero delay&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
-            <td>zero test&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>zero delay&nbsp;<input name="zerodelay" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($zerodelay)?>">&nbsp;</td>
+            <td>zero test&nbsp;<input name="zerotest" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($zerotest)?>">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>total mercury delay&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
-            <td>total mercury&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>total mercury delay&nbsp;<input name="totalmercurydelay" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($totalmercurydelay)?>">&nbsp;</td>
+            <td>total mercury&nbsp;<input name="totalmercury" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($totalmercury)?>">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>elemental mercury delay&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
-            <td>elemental mercury&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>elemental mercury delay&nbsp;<input name="elementalmercurydelay" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($elementalmercurydelay)?>">&nbsp;</td>
+            <td>elemental mercury&nbsp;<input name="elementalmercury" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($elementalmercury)?>">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td>purge&nbsp;<input type="number" max="65535" min="0" >&nbsp;</td>
+            <td>purge&nbsp;<input name="purge" type="number" max="65535" min="0" value="<?php echo PhpType::bytes2signedInt($purge)?>">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         </tbody>
     </table>
+    <br>
+    <input type="submit" value="Write modbus length table">
 </form>
 </body>
 </html>
