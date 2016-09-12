@@ -34,12 +34,12 @@ catch (Exception $e)
     <input type="text" name="ip3" value="<?php echo $ipadress[2]?>">
     <input type="text" name="ip4" value="<?php echo $ipadress[3]?>">
     Mac addr:
-    <input type="text" name="mac1" value="<?php echo $macadress[0]?>">
-    <input type="text" name="mac2" value="<?php echo $macadress[1]?>">
-    <input type="text" name="mac3" value="<?php echo $macadress[2]?>">
-    <input type="text" name="mac4" value="<?php echo $macadress[3]?>">
-    <input type="text" name="mac5" value="<?php echo $macadress[4]?>">
-    <input type="text" name="mac6" value="<?php echo $macadress[5]?>">
+    <input type="text" name="mac1" value="<?php echo dechex($macadress[0])?>">
+    <input type="text" name="mac2" value="<?php echo dechex($macadress[1])?>">
+    <input type="text" name="mac3" value="<?php echo dechex($macadress[2])?>">
+    <input type="text" name="mac4" value="<?php echo dechex($macadress[3])?>">
+    <input type="text" name="mac5" value="<?php echo dechex($macadress[4])?>">
+    <input type="text" name="mac6" value="<?php echo dechex($macadress[5])?>">
     <br>
     <input type="submit" value="Edit settings">
 </form>
