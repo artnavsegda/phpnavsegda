@@ -6,19 +6,19 @@ $modbus = new ModbusMaster($_REQUEST["host"], "TCP");
 
 try
 {
-    $startlevel = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $celldelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $celllevel = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $zerodelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $zerotest = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $totalmercurydelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $totalmercury = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $elementalmercurydelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $elementalmercury = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $precalibrationdelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $calibration = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $postcalibrationdelay = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
-    $purge = $modbus->readMultipleRegisters(0, $_REQUEST["registeraddr"], 1);
+    $startlevel = $modbus->readMultipleRegisters(0, 105, 1);
+    $celldelay = $modbus->readMultipleRegisters(0, 106, 1);
+    $celllevel = $modbus->readMultipleRegisters(0, 107, 1);
+    $zerodelay = $modbus->readMultipleRegisters(0, 108, 1);
+    $zerotest = $modbus->readMultipleRegisters(0, 109, 1);
+    $totalmercurydelay = $modbus->readMultipleRegisters(0, 110, 1);
+    $totalmercury = $modbus->readMultipleRegisters(0, 111, 1);
+    $elementalmercurydelay = $modbus->readMultipleRegisters(0, 112, 1);
+    $elementalmercury = $modbus->readMultipleRegisters(0, 113, 1);
+    $precalibrationdelay = $modbus->readMultipleRegisters(0, 114, 1);
+    $calibration = $modbus->readMultipleRegisters(0, 115, 1);
+    $postcalibrationdelay = $modbus->readMultipleRegisters(0, 116, 1);
+    $purge = $modbus->readMultipleRegisters(0, 117, 1);
 }
 catch (Exception $e)
 {
@@ -31,36 +31,6 @@ catch (Exception $e)
 ?>
 
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Html form</title>
-</head>
-<body>
-<p>
-<form action="writemodbusengine.php" method="get">
-    Host/IP addr:
-    <input type="text" name="host" value="<?php echo $_REQUEST["host"]?>">
-    <br>
-    Type:
-    <select name="registertype">
-        <option value="coil">Coil</option>
-        <option value="holdingregister" selected>Holding Register</option>
-    </select>
-    <br>
-    Register:
-    <input type="number" name="registeraddr" min="0" max="100" value="<?php echo $_REQUEST["registeraddr"]?>">
-    <br>
-    Value:
-    <input type="number" name="valuetowrite" min="0" max="1000" value="<?php echo PhpType::bytes2signedInt($recData)?>">
-    <br>
-    <input type="submit" value="Edit register">
-</form>
-</p>
-</body>
-</html>
-
-<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -68,6 +38,7 @@ catch (Exception $e)
 </head>
 
 <body><form action="writemodbuslengthtable.php" method="get"><table width="200" border="1">
+        <input type="hidden" name="host" value="<?php echo $_REQUEST["host"]?>">
         <tbody>
         <tr>
             <td>&nbsp;</td>
