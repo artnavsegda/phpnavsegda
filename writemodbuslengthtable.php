@@ -24,6 +24,7 @@ try
     $modbus->writeSingleRegister(0, 115, array($_REQUEST["elementalmercurydelay"]), array("INT"));
     $modbus->writeSingleRegister(0, 116, array($_REQUEST["elementalmercury"]), array("INT"));
     $modbus->writeSingleRegister(0, 117, array($_REQUEST["purge"]), array("INT"));
+    $modbus->writeSingleCoil(0, 100, array(TRUE));
 }
 catch (Exception $e)
 {
