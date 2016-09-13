@@ -28,6 +28,7 @@ catch (Exception $e)
 <body>
 <p>
 <form action="settingsengine.php" method="get">
+    <input type="hidden" name="host" value="<?php echo $_REQUEST["host"]?>">
     Host/IP addr:
     <input type="text" name="ip1" value="<?php echo $ipadress[0]?>">
     <input type="text" name="ip2" value="<?php echo $ipadress[1]?>">

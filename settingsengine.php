@@ -24,6 +24,8 @@ try
     $macadress[0] = $_REQUEST["mac5"];
     $macadress[1] = $_REQUEST["mac6"];
     $modbus->writeSingleRegister(0, 104, $macadress, array("INT"));
+    $modbus->writeSingleCoil(0, 100, array(TRUE));
+    $modbus->writeSingleCoil(0, 101, array(TRUE));
 }
 catch (Exception $e)
 {
