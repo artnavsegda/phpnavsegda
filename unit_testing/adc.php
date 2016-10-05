@@ -12,7 +12,8 @@ $modbus = new ModbusMaster("192.168.1.150", "TCP");
 try
 {
     $recData = $modbus->readMultipleInputRegisters(0, 0, 16);
-    $value = PhpType::bytes2signedInt($recData);
+    //$value = PhpType::bytes2signedInt($recData);
+    $values = array_chunk($recData, 2);
 }
 catch (Exception $e)
 {
@@ -39,7 +40,9 @@ catch (Exception $e)
     echo "</br>Data:</br>";
     var_dump($recData);
     echo "</br>Value:</br>";
-    var_dump($value);
+    foreach($values as $value) {
+        var_dump(PhpType::bytes2signedInt($value));
+    }
     echo "</br>";
     ?>
 </p>
