@@ -11,7 +11,7 @@ $modbus = new ModbusMaster("192.168.1.150", "TCP");
 
 try
 {
-    $recData = $modbus->readMultipleInputRegisters(0, 0, 1);
+    $recData = $modbus->readMultipleInputRegisters(0, 16, 1);
     $value = PhpType::bytes2signedInt($recData);
 }
 catch (Exception $e)
